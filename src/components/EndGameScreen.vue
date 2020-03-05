@@ -1,7 +1,10 @@
 <template>
   <div class="container">
-    <div v-if="whoWon==='player'">
-      {{ getPlayerName }} have defeated the monster.
+    <div v-if="whoWon=='surrender'">
+      Did monster beat you so hard that you had to surrender? lets beat them up this time for good
+    </div>
+    <div v-else-if="whoWon==='player'">
+      Our lord {{ getPlayerName }} have defeated the monster.
     </div>
     <div v-else>
       you lost. having badluck? Try again
