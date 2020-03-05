@@ -89,17 +89,19 @@ export default {
         this.player.health -= attackTaken;
         this.player.health <= 0 && this.end_game("monster");
         this.player.damageGiven = 0;
+        this.player.damageTaken = 0;
       }
       this.makeSpecialAttackActive = false;
     },
     heal() {
       if (this.makeHealActive) {
         const healAmount =
-          Math.floor(Math.random() * this.player.specialAttackMax) +
-          this.player.attackMax;
+          Math.floor(Math.random() * this.player.attackMax) +
+          this.player.attackMin;
         if (healAmount + this.player.health >= 100) this.player.health += 10;
         this.player.health += healAmount;
         this.player.damageTaken = 0;
+        this.player.damageGiven = 0;
 
         const shouldTakeDamage = Math.floor(Math.random() * 10)+1;
         if(shouldTakeDamage < 3) {
