@@ -45,7 +45,8 @@ export default {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   background: #233f87;
   color: #f0a5b0;
   text-align: center;

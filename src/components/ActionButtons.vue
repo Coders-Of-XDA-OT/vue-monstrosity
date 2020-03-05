@@ -37,6 +37,8 @@ export default {
   color: #595f71;
   & .btn {
     cursor: pointer;
+    margin: 10px;
+    outline: #595f71;
     &.active {
       color: darken(#f0a5b0, 10%);
     }

@@ -7,7 +7,7 @@
       Our lord {{ getPlayerName }} have defeated the monster.
     </div>
     <div v-else>
-      you lost. having badluck? Try again
+      you lost. facing badluck? Try again
     </div>
     <button @click="restartGame">Start Again</button>
   </div>
@@ -32,6 +32,7 @@ export default {
     margin-top: 6rem;
     font-size: 1.6rem;
     color: darken(#f0a5b0,20%);
+    padding: 1.6rem;
     & button {
       border: 0;
       background: transparent;
