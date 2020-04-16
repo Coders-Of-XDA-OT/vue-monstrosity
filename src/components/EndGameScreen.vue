@@ -4,13 +4,7 @@
       Did monster beat you so hard that you had to surrender? lets beat them up this time for good
     </div>
     <div v-else-if="whoWon==='player'">
-<<<<<<< HEAD
-      <div class="player">
-        Our lord {{ getPlayerName }} have defeated the monster.
-      </div>
-=======
       Our lord {{ getPlayerName }} have defeated the monster.
->>>>>>> 00ca2af2e7276bc1f54cd0b748f7ae87116eb32b
     </div>
     <div v-else>
       you lost. facing badluck? Try again
@@ -51,11 +45,5 @@ export default {
         transform: scale(1.2);
       }
     }
-<<<<<<< HEAD
-    & .player {
-      color: #4fc39e;
-    }
-=======
->>>>>>> 00ca2af2e7276bc1f54cd0b748f7ae87116eb32b
   }
 </style>
