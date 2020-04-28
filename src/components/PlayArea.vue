@@ -132,7 +132,7 @@ export default {
       }
     },
     giveUp() {
-      this.end_game(-1, "surrender");
+      this.endGame(-1, "surrender");
     }
   }
 };

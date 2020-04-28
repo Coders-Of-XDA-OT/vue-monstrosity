@@ -1,36 +1,39 @@
 # vue-monstrosity
+
 > Small click based game developed to get understanding of vuejs with vuex
 ---
 
+- Note: <b>npm</b> doesn't work sometimes so use <b>yarn</b>. If you doesn't have yarn use ```npm i -g yarn@latest```
 
 ## Project setup
 
-```
-npm install
+```bash
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 
-```
-npm run serve
+```bash
+yarn serve
 ```
 
-### Compiles and minifies for production
+### Compiles and build for production
 
-```
-npm run build
+```bash
+yarn build
 ```
 
 ### Serve for production
 
-```
-npm start
+```bash
+yarn install express serve-static
+yarn start
 ```
 
 ### Lints and fixes files
 
-```
-npm run lint
+```bash
+yarn lint
 ```
 
 ### Customize configuration
